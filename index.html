@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link href="style.css" rel="stylesheet" >
+    <script src="https://kit.fontawesome.com/60ff24af83.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>        
+        <!--section logo-->
+        <section class="header">
+            <img class="logo" src="./assets/logo.png" alt="logo-alura">
+            <h2>Deco-Cript</hs>
+        </section>
+        
+        <!--section input text -->
+        <div class="container">
+
+            <section class="input">
+                <textarea class="text__message" id="message_1"  model="input" placeholder="Digite seu texto"></textarea>
+                <div class="information">
+                    <img src="./assets/exclamacao-icon.png" alt="advertising">
+                    <span>Apenas letras minúsculas e sem acento.</span>
+                </div>
+                <div class="botton__actions">
+                    <botton class="botton__actions__1" id="botao-criptografar"> Criptografar</botton>
+                    <botton class="botton__actions__2" id="botao-descriptografar">Descriptografar</botton>
+                </div>
+            </section>
+        
+        <!--section output text-->
+            <section class="output">
+                <div class="output__message">
+                    <textarea class="output__result__message" id="message__2"  placeholder="Digite um texto que você deseja criptografar ou descriptografar." readonly></textarea>  
+                </div>
+                <button class="botton__copy" id="botao-copy">Copiar</button>
+            </section>
+        
+        </div>
+
+        <!--footer-->
+        <section class="footer">
+            <div>
+                <a href="https://www.linkedin.com/in/rina-velasquez-frontend-developer-jr/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://github.com/rinvel7" target="_blank"><i class="fa-brands fa-github"></i></a>    
+            </div>
+           <div>
+            <p>Developer: Rina Velasquez &copy; 2022</p>
+            <p>ONE Oracle Next Education T3 | Alura </p>
+           </div>  
+        </section>
+     </main>
+
+
+     <script src="script.js"></script>
+
+    </body>
+
+</html>

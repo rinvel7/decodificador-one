@@ -1,0 +1,205 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    background: #E5E5E5;;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 48px;
+    padding: 10px 0;
+}
+
+h2 {
+    padding-left: 20px;
+    color: #0A3871;
+
+}
+
+.logo {
+    margin-left: 2%;
+    height: 48px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 1% 10% 0px 10%;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 600px;
+}
+
+.text__message {
+    height: 90%;
+    width: 100%;
+    padding: 20px 12px 0 20px;
+    resize: none;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #0A3871;
+    font-size: 30px;
+    box-sizing: border-box;
+}
+
+.information {
+    text-align: left;
+    padding: 20px 0;
+    width: 100%;
+    font-size: 15px;
+    color: #495057;
+}
+
+.botton__actions {
+    display: flex;
+    flex-direction: row;
+}
+
+.botton__actions__1, .botton__copy {
+    color: #FFFFFF;
+    background-color: #0A3871;
+}
+
+#botao-descriptografar {
+    color: #0A3871;
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+}
+
+.botton__actions__1, .botton__actions__2,  .botton__copy{
+    margin-right: 10px;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 30px;
+}
+
+.botton__actions__1:hover, .botton__copy:hover{
+    cursor: pointer;
+    background-color: #1b57a0;
+    transition: 0.4s;
+}
+
+#botao-descriptografar:hover {
+    cursor: pointer;
+    background-color: #a8bedb;
+    transition: 0.4s;
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: 600px;
+}
+
+.output__message {
+    height: 100%;
+    width: 70%;
+    margin-bottom: 10px;
+    background: #FFFFFF url(assets/High\ quality.svg);
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.output__result__message{
+    height: 100%;
+    width: 100%;
+    padding: 10px 20px;
+    resize: none;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    color: #495057;
+    text-align: center;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: center;
+    text-align: center;
+    color: #495057;
+    font-size: 12px;
+    padding: 10px 10px;
+}
+
+i {
+    font-size: 20px;
+    color: #0A3871;
+}
+
+@media screen and (max-width: 780px){
+    .container {
+        flex-direction: column;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .text__message {
+        font-size: 25px;
+    }
+
+    .output {
+        width: 100%;
+        height: 200px;
+    }
+
+    .output__message {
+        width: 90%;
+        height: 100%;
+        margin-top: 20px;
+        background: white;
+        border-radius: 30px;
+    }
+}
+
+@media screen  and (max-width: 400px){
+    .input {
+        font-size: 20px;
+    }
+
+    .information {
+        font-size: 10px;
+    }
+
+    .botton__actions{
+        flex-direction: column;
+        width: 100%;
+    }  
+
+    .botton__actions__1 {
+        margin-bottom: 15px;
+    }
+
+    .output__message {
+        width: 100%;
+        
+    }
+
+    .botton__copy{
+        margin:15px;
+        width: 90%;        
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+}
